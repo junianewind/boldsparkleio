@@ -32,16 +32,31 @@ void is_prime() {
     (void)prime;
 }
 
+void product_range() {
+    int acc = 1;
+    for (int i = 1; i <= 5; ++i) acc *= i;
+    (void)acc;
+}
+
+void arithmetic_sum() {
+    int first = 3, diff = 4, count = 9;
+    int last = first + diff * (count - 1);
+    int total = (first + last) * count / 2;
+    (void)total;
+}
+
 extern "C" int golden_haven();
-extern "C" void vivid_boulder();
-extern "C" void hidden_hollow();
+extern "C" void eager_kite();
+extern "C" void sable_spruce();
 
 int main() {
     balanced_sum();
     binomial_small();
     count_multiples();
     is_prime();
-    vivid_boulder();
-    hidden_hollow();
+    product_range();
+    arithmetic_sum();
+    eager_kite();
+    sable_spruce();
     return golden_haven();
 }
